@@ -20,5 +20,11 @@
   "author": "John Fawcett",
   "license": "BSD",
   "readmeFilename": "README.md",
-  "gitHead": "f0cdf4eb43a418a1239cf45138de0dc1d2f635da"
+  "gitHead": "f0cdf4eb43a418a1239cf45138de0dc1d2f635da",
+  "devDependencies": {
+    "mocha": "~1.12.0"
+  },
+  "peerDependencies": {
+    "express": "~3.3.6"
+  }
 }
