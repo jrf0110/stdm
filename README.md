@@ -8,7 +8,7 @@ So there is no ambiguity in the API, all middleware is returned via a function c
 
 ### ```stdm.error()```
 
-Attaches an error function to the ```response``` object. Uses the ```statusCode``` property as a status code. If there are other properties, it will send them along in the response body on a field called ```error```
+Attaches an error function to the ```response``` object. Uses the ```statusCode``` property as a status code. If there are other properties, it will send them along in the response body on a field called ```error```. If the error passed in is existentially false, then stdm sends a 500. If the error is a number, we only send that number as the status code.
 
 __Example__
 
