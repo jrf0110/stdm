@@ -30,7 +30,7 @@ app.get( '/users', function( req, res, next){
 
 __Response__
 
-```
+```javascript
 {
   error: {
     name: 'INVALID_READ_PERMISSION'
