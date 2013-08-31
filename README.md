@@ -39,3 +39,32 @@ __Response__
   }
 }
 ```
+
+### ```stdm.log( arg1, arg2, ...)```
+
+Returns a middleware function that will ```console.log``` the arguments passed to ```stdm.log``` when the middleware function is called.
+
+__Example__
+
+```javascript
+app.get( '/users'
+, stdm.log( "Experimental middleware:" )
+, function( req, res, next ){ /* experimental middleware */ }
+, stdm.log( "Experimental middleware COMPLETE!" )
+, /* ... */
+);
+```
+
+### ```stdm.logReq( arg1, arg2, ...)```
+
+Returns a middleware function that will log properties on the request object whose names match the arguments passed to ```stdm.logReq```.  
+
+__Example__
+
+```javascript
+app.get( '/users'
+, stdm.log( "User:" )
+, stdm.reqLog( 'user' )
+, /* ... */
+);
+```
