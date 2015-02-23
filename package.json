@@ -26,5 +26,8 @@
   },
   "peerDependencies": {
     "express": "*"
+  },
+  "dependencies": {
+    "express-locals": "^1.0.1"
   }
 }
